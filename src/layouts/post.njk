@@ -11,6 +11,10 @@ layout: base
     
     <div class="content">
         {{ content | safe }}
+        <h2>Attachments</h2>
+        {% for attachment in posts.attachment %}
+          <li><a href="{attachment}">{attachment}</a></li>
+        {% endfor %}
     </div>
 
     <footer>
